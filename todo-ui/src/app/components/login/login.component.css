@@ -1,0 +1,22 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 0 16px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+

@@ -1,0 +1,25 @@
+.page {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-toolbar {
+  display: flex;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.empty {
+  color: gray;
+}
+
+.add-todo {
+  display: flex;
+  gap: 12px;
+}

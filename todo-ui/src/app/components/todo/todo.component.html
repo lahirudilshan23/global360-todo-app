@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+  <span>My TODO List</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    Logout
+  </button>
+</mat-toolbar>
+
+<div>
+  <mat-card class="todo-card" appearance="outlined">
+    <mat-card-content>
+      <div class="add-todo">
+        <mat-form-field appearance="outline">
+          <mat-label>New TODO</mat-label>
+          <input matInput [(ngModel)]="title" />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="saveTodo()">
+          {{ editingTodoId ? 'Update' : 'Add' }}
+        </button>
+        <button *ngIf="editingTodoId" mat-raised-button (click)="resetForm()">Cancel</button>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <mat-list *ngIf="todos.length > 0">
+        <mat-list-item *ngFor="let todo of todos">
+          <span matListItemTitle>{{ todo.title }}</span>
+
+          <button mat-icon-button matListItemMeta (click)="edit(todo)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button matListItemMeta (click)="deleteTodo(todo.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+
+      <p *ngIf="todos.length === 0" class="empty">No TODOs yet</p>
+    </mat-card-content>
+  </mat-card>
+</div>
