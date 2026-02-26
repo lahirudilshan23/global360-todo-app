@@ -15,8 +15,8 @@ The backend stores data in memory only (no database).
 ---
 ### Hard-coded test credentials
 
-Username: admin
-Password: password
+- Username: admin
+- Password: password
 
 ## Tech Stack
 
