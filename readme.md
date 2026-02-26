@@ -13,6 +13,10 @@ The application allows users to:
 The backend stores data in memory only (no database).
 
 ---
+### Hard-coded test credentials
+
+Username: admin
+Password: password
 
 ## Tech Stack
 
@@ -31,8 +35,3 @@ The backend stores data in memory only (no database).
 ## Authentication
 
 The application uses JWT-based authentication.
-
-### Hard-coded test credentials
-
-Username: admin
-Password: password
