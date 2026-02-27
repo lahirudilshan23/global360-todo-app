@@ -35,3 +35,19 @@ The backend stores data in memory only (no database).
 ## Authentication
 
 The application uses JWT-based authentication.
+
+## Getting Started
+
+Follow these steps to run the frontend project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <project-folder>
+
+2. Install frontend dependencies:
+   npm install
+
+3. Start the Angular development server:
+   npx ng serve
+
