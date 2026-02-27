@@ -46,8 +46,10 @@ Follow these steps to run the frontend project locally:
    cd <project-folder>
 
 2. Install frontend dependencies:
+   ```bash
    npm install
 
-3. Start the Angular development server:
+4. Start the Angular development server:
+   ```bash
    npx ng serve
 
